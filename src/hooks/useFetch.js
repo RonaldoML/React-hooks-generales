@@ -39,8 +39,8 @@ export const useFetch = (url) => {
 
             } catch (error) {
                 setState({
-                    loading: true,
-                    error,
+                    loading: false,
+                    error: 'No se pudo cargar la info',
                     data: null
                 })
             }
